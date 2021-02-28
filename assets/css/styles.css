@@ -1,0 +1,102 @@
+#page-login {
+  background: var(--blue);
+}
+
+#page-login.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+
+.bg-div {
+  width: 100%; 
+  height: 90%;
+  background-image: url('../Simbolo.svg'); 
+  background-size: cover;
+}
+
+.bg-div img {
+  width: 100%;
+}
+
+.login-conteiner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.logo-moveit {
+  margin: 6rem  0;
+}
+
+
+.login-moveit {
+  width: 55%;
+  line-height: 1.5rem;
+  color: var(--gray-line);
+}
+.login-moveit h2 {
+  color: var(--white);
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.login-moveit p{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+.login-moveit p i {
+  font-size: 3.4rem;
+  margin-right: 1.2rem;
+}
+
+.login-moveit p span {
+  flex-wrap: wrap;
+}
+
+
+
+
+.form {
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: 0;
+  background: linear-gradient(to left, var(--blue), var(--blue-dark));
+  border: 0px;
+  color: var(--gray-line);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form input[type]::placeholder {
+  color: var(--gray-line);
+}
+
+.button {
+  color: var(--gray-line);
+  font-size: 1.5rem;
+  width: 3.5rem;
+  padding: .8rem;
+  background: var(--blue-dark);
+  border: 1px solid var(--blue-dark);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.button:hover {
+  background: var(--green);
+}
