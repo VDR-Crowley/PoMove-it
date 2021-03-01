@@ -17,7 +17,7 @@
   <div id="page-login" class="container">
 
     <div class="bg-div">
-
+      <img src="./assets/Simbolo.svg" alt="">
     </div>
     
     <div class="login-conteiner">
@@ -35,9 +35,9 @@
         <span>Faça o login com o seu Github para começar</span>
       </p>
 
-      <form class="form" action="">
-        <label for="email"></label>
-        <input type="email" id="email" placeholder="Digiter seu username" />
+      <form class="form" action="" method="GET https://github.com/login/oauth/authorize">
+        <label for="userName"></label>
+        <input type="text" id="userName" placeholder="Digiter seu username" />
         <a href="" >
           <button class="button">
             <i class="fas fa-arrow-right"></i>
@@ -52,7 +52,17 @@
   </div>
   
 
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+
   <script src="assets/js/app.js"></script>
+
 
 </body>
 </html>

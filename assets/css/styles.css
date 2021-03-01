@@ -10,18 +10,22 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
+  overflow: hidden;
 }
 
 
 .bg-div {
-  width: 100%; 
-  height: 90%;
-  background-image: url('../Simbolo.svg'); 
-  background-size: cover;
+  width: 95%; 
+  height: 100%;
+ /* background-image: url('../Simbolo.svg'); 
+  background-repeat: no-repeat;
+  background-size: 00px;
+  background-position: top center;*/
 }
 
 .bg-div img {
   width: 100%;
+  height: 100%;
 }
 
 .login-conteiner {
@@ -85,6 +89,10 @@
 
 .form input[type]::placeholder {
   color: var(--gray-line);
+}
+
+.form input:focus {
+  background: linear-gradient(to left, var(--blue), var(--blue-dark));
 }
 
 .button {
